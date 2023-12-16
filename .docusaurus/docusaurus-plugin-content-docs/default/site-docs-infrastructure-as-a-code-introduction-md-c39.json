@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Infrastructure as a Code/Introduction",
+  "id": "Infrastructure as a Code/Introduction",
+  "title": "Introduction",
+  "description": "Infrastructure as Code and Terraform",
+  "source": "@site/docs/Infrastructure as a Code/Introduction.md",
+  "sourceDirName": "Infrastructure as a Code",
+  "slug": "/Infrastructure as a Code/Introduction",
+  "permalink": "/docs/Infrastructure as a Code/Introduction",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Infrastructure as a Code/Introduction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Infrastructure as a Code",
+    "permalink": "/docs/category/infrastructure-as-a-code"
+  },
+  "next": {
+    "title": "Infrastructure as a Code",
+    "permalink": "/docs/category/infrastructure-as-a-code-1"
+  }
+}

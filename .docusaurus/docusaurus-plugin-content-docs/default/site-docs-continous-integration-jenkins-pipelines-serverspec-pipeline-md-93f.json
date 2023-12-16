@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Continous Integration/Jenkins Pipelines/Serverspec Pipeline",
+  "id": "Continous Integration/Jenkins Pipelines/Serverspec Pipeline",
+  "title": "Serverspec Testing Pipeline",
+  "description": "The Serverspec Testing pipeline is responsible for executing Serverspec tests on multiple instances in parallel. It automates the process of installing Serverspec on developers' instances, copying the test files, and running the tests.",
+  "source": "@site/docs/Continous Integration/Jenkins Pipelines/Serverspec Pipeline.md",
+  "sourceDirName": "Continous Integration/Jenkins Pipelines",
+  "slug": "/Continous Integration/Jenkins Pipelines/Serverspec Pipeline",
+  "permalink": "/docs/Continous Integration/Jenkins Pipelines/Serverspec Pipeline",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Continous Integration/Jenkins Pipelines/Serverspec Pipeline.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AWX Trigger Pipeline",
+    "permalink": "/docs/Continous Integration/Jenkins Pipelines/AWX Pipeline"
+  },
+  "next": {
+    "title": "Infrastructure as a Code",
+    "permalink": "/docs/category/infrastructure-as-a-code"
+  }
+}

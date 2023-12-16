@@ -1,0 +1,49 @@
+pipeline {
+    agent any
+    tools {
+        maven 'maven'
+        dockerTool 'docker'
+    }
+    stages {
+        stage('clone') {
+            steps {
+                git branch: 'GestionFournisseur', url: 'https://github.com/ahmedebahrouni/PowerDevops.git'
+            }
+        }
+        stage('mvn install') {
+            steps {
+                sh 'mvn install -DskipTests '
+            }
+        }
+        stage('Uploading image docker to Nexus') {
+            steps {
+                sh 'docker login localhost:8085 -u admin -p 000000'
+                sh 'docker tag aymenellouze/alpine:backapp localhost:8085/test/aymenellouze/alpine:backapp'
+                sh 'docker push localhost:8085/test/aymenellouze/alpine:backapp'
+            }
+        }
+        stage('sonarqube') {
+            steps {
+                sh '''
+                    mvn clean verify sonar:sonar \
+                    -Dsonar.projectKey=GestionFournisseur \
+                    -Dsonar.projectName='GestionFournisseur' \
+                    -Dsonar.host.url=http://sonarqube:9000 \
+                    -Dsonar.token=sqp_33f6072ea4b1d401fbce5d8c8a23664b44473799
+                '''
+            }
+        }
+        stage('Deploying the Application') {
+            steps {
+                    withCredentials([file(credentialsId: 'azkey', variable: 'key')]) {
+                     
+                         sh '''
+                        cat ${key} > go;chmod 400 go
+                        scp docker-compose.yaml opsuser@192.168.56.10:/home/ -i go
+                        ssh -o StrictHostKeyChecking=no opsuser@192.168.56.10 -i go 'cd /home/ && docker-compose up -d'
+                        '''
+                   }
+            }
+        }
+    }
+}

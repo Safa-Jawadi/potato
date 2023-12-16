@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Continous Integration/Configuring Jenkins Pipeline",
+  "id": "Continous Integration/Configuring Jenkins Pipeline",
+  "title": "Configuring Jenkins Pipeline",
+  "description": "",
+  "source": "@site/docs/Continous Integration/Configuring Jenkins Pipeline.md",
+  "sourceDirName": "Continous Integration",
+  "slug": "/Continous Integration/Configuring Jenkins Pipeline",
+  "permalink": "/docs/docs/Continous Integration/Configuring Jenkins Pipeline",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Continous Integration/Configuring Jenkins Pipeline.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation of Jenkins",
+    "permalink": "/docs/docs/Continous Integration/Installation of Jenkins"
+  },
+  "next": {
+    "title": "Infrastructure as a Code",
+    "permalink": "/docs/docs/category/infrastructure-as-a-code"
+  }
+}

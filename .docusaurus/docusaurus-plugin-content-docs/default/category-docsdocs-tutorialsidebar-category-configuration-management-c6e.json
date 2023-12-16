@@ -1,0 +1,16 @@
+{
+  "title": "Configuration Management",
+  "description": "Enjoy!",
+  "slug": "/category/configuration-management",
+  "permalink": "/docs/docs/category/configuration-management",
+  "navigation": {
+    "previous": {
+      "title": "Configuration of Grafana Dashboards",
+      "permalink": "/docs/docs/Monitoring/Configuration of Grafana Dashboards"
+    },
+    "next": {
+      "title": "introduction",
+      "permalink": "/docs/docs/Configuration Management/introduction"
+    }
+  }
+}

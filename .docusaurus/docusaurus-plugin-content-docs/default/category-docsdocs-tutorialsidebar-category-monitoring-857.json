@@ -1,0 +1,16 @@
+{
+  "title": "Monitoring",
+  "description": "Enjoy!",
+  "slug": "/category/monitoring",
+  "permalink": "/docs/docs/category/monitoring",
+  "navigation": {
+    "previous": {
+      "title": "Add Developer roles and Access",
+      "permalink": "/docs/docs/Infrastructure as a Code/Terraform/TerraformModule/Add Developer roles and Access"
+    },
+    "next": {
+      "title": "overview",
+      "permalink": "/docs/docs/Monitoring/overview"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Infrastructure as a Code/Terraform/root",
+  "id": "Infrastructure as a Code/Terraform/root",
+  "title": "root",
+  "description": "",
+  "source": "@site/docs/Infrastructure as a Code/Terraform/root.md",
+  "sourceDirName": "Infrastructure as a Code/Terraform",
+  "slug": "/Infrastructure as a Code/Terraform/root",
+  "permalink": "/docs/Infrastructure as a Code/Terraform/root",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Infrastructure as a Code/Terraform/root.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/Infrastructure as a Code/Introduction"
+  },
+  "next": {
+    "title": "Workstation",
+    "permalink": "/docs/Infrastructure as a Code/Terraform/Workstation"
+  }
+}

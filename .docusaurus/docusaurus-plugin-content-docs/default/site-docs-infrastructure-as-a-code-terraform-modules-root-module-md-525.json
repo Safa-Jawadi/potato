@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Infrastructure as a Code/Terraform Modules/Root Module",
+  "id": "Infrastructure as a Code/Terraform Modules/Root Module",
+  "title": "Root Module",
+  "description": "The root module is responsible for calling the workstation and kubernetes modules to provision the necessary infrastructure.",
+  "source": "@site/docs/Infrastructure as a Code/Terraform Modules/Root Module.md",
+  "sourceDirName": "Infrastructure as a Code/Terraform Modules",
+  "slug": "/Infrastructure as a Code/Terraform Modules/Root Module",
+  "permalink": "/docs/Infrastructure as a Code/Terraform Modules/Root Module",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Infrastructure as a Code/Terraform Modules/Root Module.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Infrastructure as a Code",
+    "permalink": "/docs/category/infrastructure-as-a-code-1"
+  },
+  "next": {
+    "title": "Workstation",
+    "permalink": "/docs/Infrastructure as a Code/Terraform Modules/Workstation"
+  }
+}

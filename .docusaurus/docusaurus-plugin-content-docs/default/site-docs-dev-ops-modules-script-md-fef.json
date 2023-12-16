@@ -1,0 +1,27 @@
+{
+  "unversionedId": "DevOps Modules/script",
+  "id": "DevOps Modules/script",
+  "title": "DevOps Course",
+  "description": "The workflow of this course is that we will learn DevOps culture and it's tools while creating a project and we will start step by step in case of a basic knowledge is needed in IT we will explain it so everyone are in the same level7",
+  "source": "@site/docs/DevOps Modules/script.md",
+  "sourceDirName": "DevOps Modules",
+  "slug": "/DevOps Modules/script",
+  "permalink": "/docs/DevOps Modules/script",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/DevOps Modules/script.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "sidebar_position": 0
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Secrets",
+    "permalink": "/docs/category/secrets"
+  },
+  "next": {
+    "title": "Secrets",
+    "permalink": "/docs/category/secrets-1"
+  }
+}

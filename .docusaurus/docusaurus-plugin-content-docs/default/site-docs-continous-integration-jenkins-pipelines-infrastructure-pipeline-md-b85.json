@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Continous Integration/Jenkins Pipelines/Infrastructure Pipeline",
+  "id": "Continous Integration/Jenkins Pipelines/Infrastructure Pipeline",
+  "title": "Infrastructure Creation Pipeline",
+  "description": "Overview",
+  "source": "@site/docs/Continous Integration/Jenkins Pipelines/Infrastructure Pipeline.md",
+  "sourceDirName": "Continous Integration/Jenkins Pipelines",
+  "slug": "/Continous Integration/Jenkins Pipelines/Infrastructure Pipeline",
+  "permalink": "/docs/Continous Integration/Jenkins Pipelines/Infrastructure Pipeline",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Continous Integration/Jenkins Pipelines/Infrastructure Pipeline.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Jenkins Pipelines",
+    "permalink": "/docs/category/jenkins-pipelines"
+  },
+  "next": {
+    "title": "AWX Trigger Pipeline",
+    "permalink": "/docs/Continous Integration/Jenkins Pipelines/AWX Pipeline"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "DevOps Modules/DevOps Modules",
+  "id": "DevOps Modules/DevOps Modules",
+  "title": "DevOps Course",
+  "description": "The workflow of this course is that we will learn DevOps culture and it's tools while creating a project and we will start step by step in case of a basic knowledge is needed in IT we will explain it so everyone are in the same level7",
+  "source": "@site/docs/DevOps Modules/DevOps Modules.md",
+  "sourceDirName": "DevOps Modules",
+  "slug": "/DevOps Modules/",
+  "permalink": "/docs/DevOps Modules/",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/DevOps Modules/DevOps Modules.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "sidebar_position": 0
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "DevOps Modules",
+    "permalink": "/docs/category/devops-modules"
+  },
+  "next": {
+    "title": "Access GCP instance",
+    "permalink": "/docs/Developer Access/Access GCP instance"
+  }
+}

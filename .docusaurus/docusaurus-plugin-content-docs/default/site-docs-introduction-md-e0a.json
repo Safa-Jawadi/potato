@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Introduction",
+  "id": "Introduction",
+  "title": "Introduction",
+  "description": "Project Purpose",
+  "source": "@site/docs/Introduction.md",
+  "sourceDirName": ".",
+  "slug": "/Introduction",
+  "permalink": "/docs/Introduction",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Introduction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "sidebar_position": 0
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "DevOps Course",
+    "permalink": "/docs/script/"
+  }
+}

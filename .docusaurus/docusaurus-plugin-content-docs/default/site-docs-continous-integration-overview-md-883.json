@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Continous Integration/overview",
+  "id": "Continous Integration/overview",
+  "title": "Overview",
+  "description": "This comprehensive guide will provide you with all the information you need to effectively set up and manage your remote development environment.",
+  "source": "@site/docs/Continous Integration/overview.md",
+  "sourceDirName": "Continous Integration",
+  "slug": "/Continous Integration/overview",
+  "permalink": "/docs/Continous Integration/overview",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Continous Integration/overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Continous Integration",
+    "permalink": "/docs/category/continous-integration"
+  },
+  "next": {
+    "title": "Installation of Jenkins",
+    "permalink": "/docs/Continous Integration/Installation of Jenkins"
+  }
+}

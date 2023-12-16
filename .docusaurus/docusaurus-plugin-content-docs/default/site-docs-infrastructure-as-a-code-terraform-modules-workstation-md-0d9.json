@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Infrastructure as a Code/Terraform Modules/Workstation",
+  "id": "Infrastructure as a Code/Terraform Modules/Workstation",
+  "title": "Workstation",
+  "description": "Module Purpose",
+  "source": "@site/docs/Infrastructure as a Code/Terraform Modules/Workstation.md",
+  "sourceDirName": "Infrastructure as a Code/Terraform Modules",
+  "slug": "/Infrastructure as a Code/Terraform Modules/Workstation",
+  "permalink": "/docs/Infrastructure as a Code/Terraform Modules/Workstation",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Infrastructure as a Code/Terraform Modules/Workstation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Root Module",
+    "permalink": "/docs/Infrastructure as a Code/Terraform Modules/Root Module"
+  },
+  "next": {
+    "title": "Google kubernetes Engine Cluster",
+    "permalink": "/docs/Infrastructure as a Code/Terraform Modules/Google kubernetes Engine Cluster"
+  }
+}

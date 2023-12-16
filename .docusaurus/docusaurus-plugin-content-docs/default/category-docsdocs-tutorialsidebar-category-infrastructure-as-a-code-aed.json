@@ -1,0 +1,16 @@
+{
+  "title": "Infrastructure as a Code",
+  "description": "Enjoy!",
+  "slug": "/category/infrastructure-as-a-code",
+  "permalink": "/docs/docs/category/infrastructure-as-a-code",
+  "navigation": {
+    "previous": {
+      "title": "Installation of Jenkins",
+      "permalink": "/docs/docs/Continous Integration/Installation of Jenkins"
+    },
+    "next": {
+      "title": "Introduction",
+      "permalink": "/docs/docs/Infrastructure as a Code/Introduction"
+    }
+  }
+}

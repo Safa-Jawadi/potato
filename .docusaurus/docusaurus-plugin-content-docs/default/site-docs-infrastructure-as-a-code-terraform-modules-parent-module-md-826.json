@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Infrastructure as a Code/Terraform Modules/Parent Module",
+  "id": "Infrastructure as a Code/Terraform Modules/Parent Module",
+  "title": "Parent Module",
+  "description": "Usage",
+  "source": "@site/docs/Infrastructure as a Code/Terraform Modules/Parent Module.md",
+  "sourceDirName": "Infrastructure as a Code/Terraform Modules",
+  "slug": "/Infrastructure as a Code/Terraform Modules/Parent Module",
+  "permalink": "/docs/Infrastructure as a Code/Terraform Modules/Parent Module",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Infrastructure as a Code/Terraform Modules/Parent Module.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Infrastructure as a Code",
+    "permalink": "/docs/category/infrastructure-as-a-code-1"
+  },
+  "next": {
+    "title": "Workstation",
+    "permalink": "/docs/Infrastructure as a Code/Terraform Modules/Workstation"
+  }
+}

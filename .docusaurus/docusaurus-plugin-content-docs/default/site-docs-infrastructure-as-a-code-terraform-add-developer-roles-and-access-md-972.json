@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Infrastructure as a Code/Terraform/Add Developer roles and Access",
+  "id": "Infrastructure as a Code/Terraform/Add Developer roles and Access",
+  "title": "Add Developer roles and Access",
+  "description": "To add a new developer and role binding, as well as a new role, navigate to infrastructure/modules/IamRbac follow these steps:",
+  "source": "@site/docs/Infrastructure as a Code/Terraform/Add Developer roles and Access.md",
+  "sourceDirName": "Infrastructure as a Code/Terraform",
+  "slug": "/Infrastructure as a Code/Terraform/Add Developer roles and Access",
+  "permalink": "/docs/Infrastructure as a Code/Terraform/Add Developer roles and Access",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Infrastructure as a Code/Terraform/Add Developer roles and Access.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Google kubernetes Engine Cluster",
+    "permalink": "/docs/Infrastructure as a Code/Terraform/Google kubernetes Engine Cluster"
+  },
+  "next": {
+    "title": "Monitoring",
+    "permalink": "/docs/category/monitoring"
+  }
+}

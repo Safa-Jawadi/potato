@@ -1,0 +1,6 @@
+projectKey=doc
+serverUrl=http://localhost:9000
+serverVersion=9.9.1.69595
+dashboardUrl=http://localhost:9000/dashboard?id=doc
+ceTaskId=AYkSMCo-SAi_cOEfVPVU
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYkSMCo-SAi_cOEfVPVU

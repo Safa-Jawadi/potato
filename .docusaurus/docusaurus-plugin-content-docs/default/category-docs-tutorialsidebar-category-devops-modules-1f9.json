@@ -1,0 +1,16 @@
+{
+  "title": "DevOps Modules",
+  "description": "Enjoy!",
+  "slug": "/category/devops-modules",
+  "permalink": "/docs/category/devops-modules",
+  "navigation": {
+    "previous": {
+      "title": "Translate your site",
+      "permalink": "/docs/tutorial-extras/translate-your-site"
+    },
+    "next": {
+      "title": "DevOps Course",
+      "permalink": "/docs/DevOps Modules/"
+    }
+  }
+}

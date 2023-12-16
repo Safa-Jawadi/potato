@@ -1,0 +1,16 @@
+{
+  "title": "Infrastructure as a Code",
+  "description": "Enjoy!",
+  "slug": "/category/infrastructure-as-a-code-1",
+  "permalink": "/docs/category/infrastructure-as-a-code-1",
+  "navigation": {
+    "previous": {
+      "title": "Introduction",
+      "permalink": "/docs/Infrastructure as a Code/Introduction"
+    },
+    "next": {
+      "title": "Root Module",
+      "permalink": "/docs/Infrastructure as a Code/Terraform Modules/Root Module"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Continous Integration/Jenkins Pipelines/AWX Pipeline",
+  "id": "Continous Integration/Jenkins Pipelines/AWX Pipeline",
+  "title": "AWX Trigger Pipeline",
+  "description": "The AWX Trigger pipeline is responsible for triggering Ansible Tower jobs in AWX. It allows you to automate the execution of specific job templates from within your Jenkins pipeline.",
+  "source": "@site/docs/Continous Integration/Jenkins Pipelines/AWX Pipeline.md",
+  "sourceDirName": "Continous Integration/Jenkins Pipelines",
+  "slug": "/Continous Integration/Jenkins Pipelines/AWX Pipeline",
+  "permalink": "/docs/Continous Integration/Jenkins Pipelines/AWX Pipeline",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Continous Integration/Jenkins Pipelines/AWX Pipeline.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Infrastructure Creation Pipeline",
+    "permalink": "/docs/Continous Integration/Jenkins Pipelines/Infrastructure Pipeline"
+  },
+  "next": {
+    "title": "Serverspec Testing Pipeline",
+    "permalink": "/docs/Continous Integration/Jenkins Pipelines/Serverspec Pipeline"
+  }
+}

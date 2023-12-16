@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Backup/Configuring Kasten10 by Veeam",
+  "id": "Backup/Configuring Kasten10 by Veeam",
+  "title": "Configuring Kasten10 by Veeam",
+  "description": "",
+  "source": "@site/docs/Backup/Configuring Kasten10 by Veeam.md",
+  "sourceDirName": "Backup",
+  "slug": "/Backup/Configuring Kasten10 by Veeam",
+  "permalink": "/docs/Backup/Configuring Kasten10 by Veeam",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Backup/Configuring Kasten10 by Veeam.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installatation of Veaam",
+    "permalink": "/docs/Backup/Installatation of Veaam"
+  },
+  "next": {
+    "title": "Secrets",
+    "permalink": "/docs/category/secrets"
+  }
+}

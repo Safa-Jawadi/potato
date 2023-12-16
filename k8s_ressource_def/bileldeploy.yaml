@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: bilel
+  name: bilel
+spec:
+  replicas: 
+  selector:
+    matchLabels:
+      app: bilel
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: bilel
+    spec:
+      containers:
+      - image: bilelabbass/repos_fromation:production
+        name: repos-fromation-fm7q8
+        ports:
+            - containerPort: 80
+        resources: {}
+status: {}

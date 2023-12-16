@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Infrastructure as a Code/Terraform/Google kubernetes Engine Cluster",
+  "id": "Infrastructure as a Code/Terraform/Google kubernetes Engine Cluster",
+  "title": "Google kubernetes Engine Cluster",
+  "description": "Module Purpose",
+  "source": "@site/docs/Infrastructure as a Code/Terraform/Google kubernetes Engine Cluster.md",
+  "sourceDirName": "Infrastructure as a Code/Terraform",
+  "slug": "/Infrastructure as a Code/Terraform/Google kubernetes Engine Cluster",
+  "permalink": "/docs/Infrastructure as a Code/Terraform/Google kubernetes Engine Cluster",
+  "draft": false,
+  "editUrl": "https://github.com/Chamssiddine/remote-development-environment/docs/Infrastructure as a Code/Terraform/Google kubernetes Engine Cluster.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Workstation",
+    "permalink": "/docs/Infrastructure as a Code/Terraform/Workstation"
+  },
+  "next": {
+    "title": "Add Developer roles and Access",
+    "permalink": "/docs/Infrastructure as a Code/Terraform/Add Developer roles and Access"
+  }
+}
