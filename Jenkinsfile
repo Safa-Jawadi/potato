@@ -21,9 +21,7 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                   sh '''
-                    docker build -t ${NEXUS_URL}/${NEXUS_REPO}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG} --target=production .
-                   '''
+             sh 'docker build -t "${NEXUS_URL}/${NEXUS_REPO}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}" --target=production .'
             }
         }
 
