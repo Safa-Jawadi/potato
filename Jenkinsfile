@@ -8,7 +8,7 @@ pipeline {
       dockerTool 'docker'
     }
     environment {
-        NEXUS_URL = "nexus:8085"  // Replace with your Nexus URL
+        NEXUS_URL = "localhost:8085"  // Replace with your Nexus URL
         NEXUS_REPO = "documentation"        // Replace with your Nexus repository name
         DOCKER_IMAGE_NAME = "doc"  // Replace with your Docker image name
         DOCKER_IMAGE_TAG = "1.2.0"    // Replace with your Docker image tag
@@ -30,9 +30,7 @@ pipeline {
         stage('Docker Push to Nexus') {
             steps {
                 script {
-                        sh 'nslookup nexus'
-                        sh ' docker login localhost:8086 -u admin -p nexus || exit 0'
-                        sh "docker login  nexus:8085 -u admin -p nexus"
+                
                     // Login to Nexus Docker registry
                     withCredentials([usernamePassword(credentialsId: 'nexusCredentials', passwordVariable: 'NEXUS_PASSWORD', usernameVariable: 'NEXUS_USERNAME')]) {
                          sh "docker login  ${NEXUS_URL} -u ${NEXUS_USERNAME} -p ${NEXUS_PASSWORD}"
