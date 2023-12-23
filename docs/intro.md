@@ -1,20 +1,47 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 
-import ReactPlayer from 'react-player'
+# Tutorial Intro
 
-# Introduction
+Let's discover **Docusaurus in less than 5 minutes**.
 
-<div className="video__wrapper">
-    <ReactPlayer className="video__player" controls height="100%" url="/remotedevenv.mp4" width="100%" />
-</div>
+## Getting Started
 
-<!-- You can check my [Portfolio](https://chamseddineabd.netlify.com) -->
+Get started by **creating a new site**.
 
-## Project Purpose
+Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-I created a remote development environment project to tackle all the challenges posed by the increasing complexity of software and the need to recruit new developers. As I noticed, setting up a development environment manually can be a time-consuming process, particularly for new developers who are not familiar with the system. Therefore, my project aims to leverage cloud-based technologies such as GCP, Ansible, Terraform, AWX, CI/CD, Kubernetes, and SSO with Keycloak to streamline the setup process and allow developers to start creating software efficiently. With my project, developers can access a secure and flexible platform that can be accessed from anywhere, using any device, and eliminate the constraints of hardware or software requirements.
+### What you'll need
 
-![thumbnail](/img/thumbnail.png)
+- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
+  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
+## Generate a new site
+
+Generate a new Docusaurus site using the **classic template**.
+
+The classic template will automatically be added to your project after you run the command:
+
+```bash
+npm init docusaurus@latest my-website classic
+```
+
+You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+
+The command also installs all necessary dependencies you need to run Docusaurus.
+
+## Start your site
+
+Run the development server:
+
+```bash
+cd my-website
+npm run start
+```
+
+The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+
+The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+
+Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.

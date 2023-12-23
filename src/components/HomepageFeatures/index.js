@@ -1,37 +1,35 @@
-import React from 'react';
 import clsx from 'clsx';
+import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-
-import ReactPlayer from 'react-player'
 
 const FeatureList = [
   {
-    title: 'Collaborative Development',
-    Svg: require('@site/static/img/team.svg').default,
+    title: 'Easy to Use',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Enable seamless collaboration among developers in a remote environment. 
-        Work together on projects, share code, and communicate effectively.
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
       </>
     ),
   },
   {
-    title: 'Secure and Isolated Environments',
-    Svg: require('@site/static/img/sec.svg').default,
+    title: 'Focus on What Matters',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Ensure the security of your development environment with isolated instances, firewalls, and secure connections. 
-        Protect your code and data from unauthorized access.
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
   },
   {
-    title: 'Scalable and Flexible Infrastructure',
-    Svg: require('@site/static/img/scalable.svg').default,
+    title: 'Powered by React',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Scale your remote development environment effortlessly as your team grows.
-        Easily add or modify instances, adjust resources, and adapt to changing project requirements.
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
       </>
     ),
   },
@@ -44,7 +42,7 @@ function Feature({Svg, title, description}) {
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
     </div>
@@ -55,9 +53,6 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-
-
-
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
@@ -67,4 +62,3 @@ export default function HomepageFeatures() {
     </section>
   );
 }
-
