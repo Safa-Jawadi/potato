@@ -5,6 +5,13 @@ pipeline {
       dockerTool 'docker'
     }
 
+    environment {
+        NEXUS_URL = "http://nexus:8085"  // Replace with your Nexus URL
+        NEXUS_REPO = "documentation"        // Replace with your Nexus repository name
+        DOCKER_IMAGE_NAME = "doc"  // Replace with your Docker image name
+        DOCKER_IMAGE_TAG = "1.2.0"    // Replace with your Docker image tag
+    }
+
     stages {
         stage('Clone') {
             steps {
@@ -15,20 +22,24 @@ pipeline {
         stage('Docker Build') {
             steps {
                    sh '''
-                       docker build -t documentation:1.0.1 . --target=production
-                       docker build -t documentation:latest . --target=production
+                    docker build -t ${NEXUS_URL}/${NEXUS_REPO}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG} --target=production .
                    '''
             }
         }
 
         stage('Docker Push to Nexus') {
             steps {
-                   sh '''
-                    echo push image to nexus
-                   '''
+                script {
+                    // Login to Nexus Docker registry
+                    withCredentials([usernamePassword(credentialsId: 'nexusCredentials', passwordVariable: 'NEXUS_PASSWORD', usernameVariable: 'NEXUS_USERNAME')]) {
+                        sh "docker login  ${NEXUS_URL} -u ${NEXUS_USERNAME} -p ${NEXUS_PASSWORD}"
+                    }
+
+                    // Push the Docker image to Nexus
+                    sh "docker push ${NEXUS_URL}/${NEXUS_REPO}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}"
+                }
             }
         }
-
 
 
     }
