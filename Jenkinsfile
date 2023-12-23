@@ -30,9 +30,9 @@ pipeline {
         stage('Docker Push to Nexus') {
             steps {
                 script {
+                        sh "docker login  nexus:8085 -u admin -p nexus"
                     // Login to Nexus Docker registry
                     withCredentials([usernamePassword(credentialsId: 'nexusCredentials', passwordVariable: 'NEXUS_PASSWORD', usernameVariable: 'NEXUS_USERNAME')]) {
-                        sh "docker login  ${NEXUS_URL} -u admin -p nexus"
                          sh "docker login  ${NEXUS_URL} -u ${NEXUS_USERNAME} -p ${NEXUS_PASSWORD}"
 
                     }
