@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        NEXUS_URL = "http://nexus:8085"  // Replace with your Nexus URL
+        NEXUS_URL = "nexus:8085"  // Replace with your Nexus URL
         NEXUS_REPO = "documentation"        // Replace with your Nexus repository name
         DOCKER_IMAGE_NAME = "doc"  // Replace with your Docker image name
         DOCKER_IMAGE_TAG = "1.2.0"    // Replace with your Docker image tag
@@ -20,9 +20,9 @@ pipeline {
         }
 
         stage('Docker Build') {
-            steps {
+            steps {    
              sh 'docker build -t "${NEXUS_URL}/${NEXUS_REPO}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}" --target=production .'
-            }
+            }   
         }
 
         stage('Docker Push to Nexus') {
