@@ -6,7 +6,6 @@ pipeline {
     }
 
     stages {
-
         stage('Clone') {
             steps {
                 git branch: 'main', url: 'https://github.com/safa-jawadi/potato'
