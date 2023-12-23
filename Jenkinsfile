@@ -38,7 +38,7 @@ pipeline {
                     }
 
                     // Push the Docker image to Nexus
-                    sh "docker push ${NEXUS_URL}/${NEXUS_REPO}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}"
+                    sh "docker push ${NEXUS_URL}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}"
                 }
             }
         }
