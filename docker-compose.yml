@@ -4,6 +4,8 @@ services:
   potato:
     container_name: potato
     image: jenkins/jenkins:lts-jdk17
+    user: root
+    
     ports:
       - "8080:8080"
     volumes:
