@@ -10,24 +10,56 @@ services:
     - jenkins_data:/var/jenkins_home
     - //var/run/docker.sock:/var/run/docker.sock
     - /usr/local/bin/docker:/usr/local/bin/docker
+    networks:
+      devops:
+
 
   sonarqube:
+    image: sonarqube
     container_name: sonarqube
-    image: sonarqube:latest
     ports:
       - "9000:9000"
-    
-  
+    environment:
+      - sonar.jdbc.url=jdbc:postgresql://db:5432/sonar
+    volumes:
+      - sonarqube_conf:/opt/sonarqube/conf
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_extensions:/opt/sonarqube/extensions
+    networks:
+      devops:
+
+    depends_on:
+      - db
+  db: 
+    image: postgres
+    environment:
+      - POSTGRES_USER=sonar
+      - POSTGRES_PASSWORD=sonar
+    volumes:
+      - postgresql:/var/lib/postgresql
+      - postgresql_data:/var/lib/postgresql/data
+    networks:
+      devops:
+
   nexus:
     container_name: nexus
     image: sonatype/nexus3:latest
     ports:
       - "8081:8081"
-     
-
+    volumes:
+      - nexus-data:/nexus-data
+    restart: always
+    networks:
+      devops:
 volumes:
-  jenkins_data:
-
+  jenkins_data: {}
+  nexus-data: {}
+  sonarqube_conf: {}
+  sonarqube_data: {}
+  sonarqube_extensions: {}
+  postgresql: {}
+  postgresql_data: {}
 networks:
-  my_network:
+  devops:
     driver: bridge  
+    name: devops
