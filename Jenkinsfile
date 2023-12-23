@@ -7,7 +7,6 @@ pipeline {
       nodejs 'nodejs'
       dockerTool 'docker'
     }
-
     environment {
         NEXUS_URL = "nexus:8085"  // Replace with your Nexus URL
         NEXUS_REPO = "documentation"        // Replace with your Nexus repository name
@@ -33,7 +32,9 @@ pipeline {
                 script {
                     // Login to Nexus Docker registry
                     withCredentials([usernamePassword(credentialsId: 'nexusCredentials', passwordVariable: 'NEXUS_PASSWORD', usernameVariable: 'NEXUS_USERNAME')]) {
-                        sh "docker login  ${NEXUS_URL} -u ${NEXUS_USERNAME} -p ${NEXUS_PASSWORD}"
+                        sh "docker login  ${NEXUS_URL} -u admin -p nexus"
+                         sh "docker login  ${NEXUS_URL} -u ${NEXUS_USERNAME} -p ${NEXUS_PASSWORD}"
+
                     }
 
                     // Push the Docker image to Nexus
