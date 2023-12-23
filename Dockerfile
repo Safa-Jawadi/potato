@@ -1,5 +1,5 @@
 # BASE OS
-FROM node:16-alpine3.18  as development
+FROM node:18-alpine3.18  as development
 WORKDIR /app
 COPY package.json /app/package.json
 RUN npm install
@@ -9,7 +9,7 @@ CMD ["npm", "start"]
 
 # Multistage docker file
 # Build Stage
-FROM node:16-alpine3.18 as build
+FROM node:18-alpine3.18 as build
 WORKDIR /app
 COPY package.json /app/package.json
 RUN npm install
