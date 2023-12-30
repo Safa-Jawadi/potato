@@ -15,11 +15,11 @@ pipeline {
     }
 
     stages {
-        stage('Clone') {
-            steps {
-                git branch: 'main', url: 'https://github.com/safa-jawadi/potato'
-            }
-        }
+        // stage('Clone') {
+        //     steps {
+        //         git branch: 'main', url: 'https://github.com/safa-jawadi/potato'
+        //     }
+        // }
 
         stage('Code Analysis') {
             steps {
@@ -31,7 +31,7 @@ pipeline {
                 }
             }
         }
-        
+
         stage('Docker Build') {
             steps {    
              sh 'docker build -t "${NEXUS_URL}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}" --target=production .'
