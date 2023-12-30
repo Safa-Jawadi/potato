@@ -21,6 +21,17 @@ pipeline {
             }
         }
 
+        stage('Code Analysis') {
+            steps {
+                script {
+                    def scannerHome = tool 'sonarqube-scanner'
+                    withSonarQubeEnv('sonarqube') {
+                        sh "${scannerHome}/bin/sonar-scanner"
+                    }
+                }
+            }
+        }
+        
         stage('Docker Build') {
             steps {    
              sh 'docker build -t "${NEXUS_URL}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}" --target=production .'
@@ -42,6 +53,7 @@ pipeline {
                 }
             }
         }
+
 
 
     }
