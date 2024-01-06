@@ -21,14 +21,16 @@ pipeline {
         //     }
         // }
 
-        stage('Code Analysis') {
-            steps {
-                script {
-                    def scannerHome = tool 'sonarqube-scanner'
-                    withSonarQubeEnv('sonarqube') {
-                        sh "${scannerHome}/bin/sonar-scanner"
-                    }
-                }
+        stage('SonarQube analysis') {
+            def scannerHome = tool 'SonarScanner 4.0';
+            withSonarQubeEnv('sonarqube') { // If you have configured more than one global server connection, you can specify its name
+            sh """
+                ${scannerHome}/bin/sonar-scanner
+                 -Dsonar.projectKey=doc \\
+                -Dsonar.sources=./src
+                               
+
+               """
             }
         }
 
