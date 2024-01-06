@@ -21,20 +21,33 @@ pipeline {
         //     }
         // }
 
-        stage('SonarQube analysis') {
-          steps{
-            def scannerHome = tool 'SonarScanner 4.0';
-            withSonarQubeEnv('sonarqube') { // If you have configured more than one global server connection, you can specify its name
-                sh """
-                    ${scannerHome}/bin/sonar-scanner
-                    -Dsonar.projectKey=doc \\
-                    -Dsonar.sources=./src
-                                
-
-                """
+       stage('SonarQube Analysis') {
+                environment {
+                    SONAR_PROJECT_KEY = 'doc'
+                    SONAR_SOURCES_DIR = './src'
+                    SONAR_HOST_URL = 'http://sonarqube:9000'
+                }
+                agent {
+                    docker {
+                        image 'sonarsource/sonar-scanner-cli'
+                        args "-v /var/run/docker.sock:/var/run/docker.sock --network devops"
+                    }
+                }
+                steps {
+                    withCredentials([string(credentialsId: 'sonarqubetoken', variable: 'SONAR_TOKEN')]) {
+                        script {
+                            sh """
+                            sonar-scanner \\
+                                -Dsonar.projectKey=${SONAR_PROJECT_KEY} \\
+                                -Dsonar.sources=${SONAR_SOURCES_DIR} \\
+                                -Dsonar.host.url=${SONAR_HOST_URL} \\
+                                -Dsonar.token=${SONAR_TOKEN} \\
+                              
+                            """
+                        }
+                    }
+                }
             }
-          }
-        }
 
         stage('Docker Build') {
             steps {    
